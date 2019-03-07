@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="葆宁">
+
+
+
+<meta name="description" content="编程互联 转自码农网，作者：朱朝阳 http://www.codeceo.com/article/15-data-science-python-libraries.html Python 近几年在数据科学行业获得了人们的极大青睐，各种资源也层出不穷。数据科学解决方案公司 ActiveWizards 近日根据他们自己的应用开发经验，总结了数据科学家和工程师将在 2017 年最常使用的 Python">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="流行的15个数据科学Python库">
+<meta property="og:url" content="https://github.com/michaelwuyu/michaelwuyu.github.io.git/2018/05/06/流行的 15 个数据科学 Python 库/index.html">
+<meta property="og:site_name" content="geek_wuyu">
+<meta property="og:description" content="编程互联 转自码农网，作者：朱朝阳 http://www.codeceo.com/article/15-data-science-python-libraries.html Python 近几年在数据科学行业获得了人们的极大青睐，各种资源也层出不穷。数据科学解决方案公司 ActiveWizards 近日根据他们自己的应用开发经验，总结了数据科学家和工程师将在 2017 年最常使用的 Python">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://github.com/images/135.jpg">
+<meta property="og:image" content="https://github.com/images/136.jpg">
+<meta property="og:image" content="https://github.com/images/137.jpg">
+<meta property="og:image" content="https://github.com/images/138.jpg">
+<meta property="og:image" content="https://github.com/images/139.jpg">
+<meta property="og:updated_time" content="2018-09-12T05:06:58.478Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="流行的15个数据科学Python库">
+<meta name="twitter:description" content="编程互联 转自码农网，作者：朱朝阳 http://www.codeceo.com/article/15-data-science-python-libraries.html Python 近几年在数据科学行业获得了人们的极大青睐，各种资源也层出不穷。数据科学解决方案公司 ActiveWizards 近日根据他们自己的应用开发经验，总结了数据科学家和工程师将在 2017 年最常使用的 Python">
+<meta name="twitter:image" content="https://github.com/images/135.jpg">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="geek_wuyu" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>流行的15个数据科学Python库 | geek_wuyu</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: 
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/bn.jpg" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">葆宁</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">认真 奋进  阳光</p>
+        
+
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa 北京大学" href="https://pku.edu.cn" title="北京大学"></a>
+                            
+                                <a class="fa 新浪微博" href="https://weibo.com/3042489123/" title="新浪微博"></a>
+                            
+                                <a class="fa GitHub" href="https://github.com/michaelwuyu" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa 微信公众号" href="/img/WX.jpg" title="微信公众号"></a>
+                            
+                                <a class="fa CSDN" href="https://www.csdn.net/" title="CSDN"></a>
+                            
+                                <a class="fa QQ" href="/276326571" title="QQ"></a>
+                            
+                                <a class="fa 微信" href="/17600742008" title="微信"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/IT/">IT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IT互联网/">IT互联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PKU/">PKU</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pku/">pku</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/互联网/">互联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/人工智能/">人工智能</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/芯片/">芯片</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于Java开发&amp;大数据分析</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">葆宁</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/bn.jpg" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">葆宁</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">认真 奋进  阳光</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa 北京大学" target="_blank" href="https://pku.edu.cn" title="北京大学"></a>
+                            
+                                <a class="fa 新浪微博" target="_blank" href="https://weibo.com/3042489123/" title="新浪微博"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/michaelwuyu" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa 微信公众号" target="_blank" href="/img/WX.jpg" title="微信公众号"></a>
+                            
+                                <a class="fa CSDN" target="_blank" href="https://www.csdn.net/" title="CSDN"></a>
+                            
+                                <a class="fa QQ" target="_blank" href="/276326571" title="QQ"></a>
+                            
+                                <a class="fa 微信" target="_blank" href="/17600742008" title="微信"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我">
+</nav>
+      <div class="body-wrap"><article id="post-流行的 15 个数据科学 Python 库" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/05/06/流行的 15 个数据科学 Python 库/" class="article-date">
+      <time datetime="2018-05-06T06:04:54.000Z" itemprop="datePublished">2018-05-06</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      流行的15个数据科学Python库
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/IT/">IT</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>编程互联</p>
+<p>转自码农网，作者：朱朝阳</p>
+<p><a href="http://www.codeceo.com/article/15-data-science-python-libraries.html" target="_blank" rel="noopener">http://www.codeceo.com/article/15-data-science-python-libraries.html</a></p>
+<p>Python 近几年在数据科学行业获得了人们的极大青睐，各种资源也层出不穷。数据科学解决方案公司 ActiveWizards 近日根据他们自己的应用开发经验，总结了数据科学家和工程师将在 2017 年最常使用的 Python 库。</p>
+<p>1）NumPy</p>
+<p>地址：<a href="http://www.numpy.org" target="_blank" rel="noopener">http://www.numpy.org</a></p>
+<p>当使用 Python 开始处理科学任务时，不可避免地需要求助 Python 的 SciPy Stack，它是专门为 Python 中的科学计算而设计的软件的集合（不要与 SciPy 混淆，它只是这个 stack 的一部分，以及围绕这个 stack 的社区）。这个 stack 相当庞大，其中有十几个库，所以我们想聚焦在核心包上（特别是最重要的）。</p>
+<p>NumPy（代表 Numerical Python）是构建科学计算 stack 的最基础的包。它为 Python 中的 n 维数组和矩阵的操作提供了大量有用的功能。该库还提供了 NumPy 数组类型的数学运算向量化，可以提升性能，从而加快执行速度。</p>
+<p>2）SciPy</p>
+<p>地址：<a href="https://www.scipy.org" target="_blank" rel="noopener">https://www.scipy.org</a></p>
+<p>SciPy 是一个工程和科学软件库。除此以外，你还要了解 SciPy Stack 和 SciPy 库之间的区别。SciPy 包含线性代数、优化、集成和统计的模块。SciPy 库的主要功能建立在 NumPy 的基础之上，因此它的数组大量使用了 NumPy。它通过其特定的子模块提供高效的数值例程操作，比如数值积分、优化和许多其他例程。SciPy 的所有子模块中的函数都有详细的文档，这也是一个优势。</p>
+<p>3）Pandas</p>
+<p>地址：<a href="http://pandas.pydata.org" target="_blank" rel="noopener">http://pandas.pydata.org</a></p>
+<p>Pandas 是一个 Python 包，旨在通过「标记（labeled）」和「关系（relational）」数据进行工作，简单直观。Pandas 是 data wrangling 的完美工具。它设计用于快速简单的数据操作、聚合和可视化。库中有两个主要的数据结构：</p>
+<p>Series：一维</p>
+<p>Data Frames：二维</p>
+<p>例如，当你要从这两种类型的结构中接收到一个新的「Dataframe」类型的数据时，你将通过传递一个「Series」来将一行添加到「Dataframe」中来接收这样的 Dataframe：</p>
+<p>这里只是一小撮你可以用 Pandas 做的事情：</p>
+<p>轻松删除并添加「Dataframe」中的列</p>
+<p>将数据结构转换为「Dataframe」对象</p>
+<p>处理丢失数据，表示为 NaN（Not a Number）</p>
+<p>功能强大的分组可视化</p>
+<p>4）Matplotlib</p>
+<p>地址：<a href="https://matplotlib.org" target="_blank" rel="noopener">https://matplotlib.org</a></p>
+<p>Matplotlib 是另一个 SciPy Stack 核心软件包和另一个 Python 库，专为轻松生成简单而强大的可视化而量身定制。它是一个顶尖的软件，使得 Python（在 NumPy、SciPy 和 Pandas 的帮助下）成为 MatLab 或 Mathematica 等科学工具的显著竞争对手。然而，这个库比较底层，这意味着你需要编写更多的代码才能达到高级的可视化效果，通常会比使用更高级工具付出更多努力，但总的来说值得一试。花一点力气，你就可以做到任何可视化：</p>
+<p>线图</p>
+<p>散点图</p>
+<p>条形图和直方图</p>
+<p>饼状图</p>
+<p>茎图</p>
+<p>轮廓图</p>
+<p>场图</p>
+<p>频谱图</p>
+<p>还有使用 Matplotlib 创建标签、网格、图例和许多其他格式化实体的功能。基本上，一切都是可定制的。</p>
+<p>该库支持不同的平台，并可使用不同的 GUI 工具套件来描述所得到的可视化。许多不同的 IDE（如 IPython）都支持 Matplotlib 的功能。</p>
+<p>还有一些额外的库可以使可视化变得更加容易。</p>
+<p><img src="/images/135.jpg" alt="&quot;language”"></p>
+<p>5）Seaborn</p>
+<p>地址：<a href="https://seaborn.pydata.org" target="_blank" rel="noopener">https://seaborn.pydata.org</a></p>
+<p>Seaborn 主要关注统计模型的可视化；这种可视化包括热度图（heat map），可以总结数据但也描绘总体分布。Seaborn 基于 Matplotlib，并高度依赖于它。</p>
+<p><img src="/images/136.jpg" alt="&quot;language”"></p>
+<p>6）Bokeh</p>
+<p>地址：<a href="http://bokeh.pydata.org" target="_blank" rel="noopener">http://bokeh.pydata.org</a></p>
+<p>Bokeh 也是一个很好的可视化库，其目的是交互式可视化。与之前的库相反，这个库独立于 Matplotlib。正如我们已经提到的那样，Bokeh 的重点是交互性，它通过现代浏览器以数据驱动文档（D3.js）的风格呈现。</p>
+<p><img src="/images/137.jpg" alt="&quot;language”"></p>
+<p>7）Plotly</p>
+<p>地址：<a href="https://plot.ly" target="_blank" rel="noopener">https://plot.ly</a></p>
+<p>最后谈谈 Plotly。它是一个基于 Web 的工具箱，用于构建可视化，将 API 呈现给某些编程语言（其中包括 Python）。在 plot.ly 网站上有一些强大的、开箱即用的图形。为了使用 Plotly，你需要设置你的 API 密钥。图形处理会放在服务器端，并在互联网上发布，但也有一种方法可以避免这么做。</p>
+<p><img src="/images/138.jpg" alt="&quot;language”"></p>
+<p>机器学习8）SciKit-Learn</p>
+<p>地址：<a href="http://scikit-learn.org" target="_blank" rel="noopener">http://scikit-learn.org</a></p>
+<p>Scikits 是 SciPy Stack 的附加软件包，专为特定功能（如图像处理和辅助机器学习）而设计。在后者方面，其中最突出的一个是 scikit-learn。该软件包构建于 SciPy 之上，并大量使用其数学操作。</p>
+<p>scikit-learn 有一个简洁和一致的接口，可利用常见的机器学习算法，让我们可以简单地在生产中应用机器学习。该库结合了质量很好的代码和良好的文档，易于使用且有着非常高的性能，是使用 Python 进行机器学习的实际上的行业标准。</p>
+<p>深度学习：Keras / TensorFlow / Theano</p>
+<p>在深度学习方面，Python 中最突出和最方便的库之一是 Keras，它可以在 TensorFlow 或者 Theano 之上运行。让我们来看一下它们的一些细节。</p>
+<p>9）Theano</p>
+<p>地址：<a href="https://github.com/Theano">https://github.com/Theano</a></p>
+<p>首先，让我们谈谈 Theano。Theano 是一个 Python 包，它定义了与 NumPy 类似的多维数组，以及数学运算和表达式。该库是经过编译的，使其在所有架构上能够高效运行。这个库最初由蒙特利尔大学机器学习组开发，主要是为了满足机器学习的需求。</p>
+<p>要注意的是，Theano 与 NumPy 在底层的操作上紧密集成。该库还优化了 GPU 和 CPU 的使用，使数据密集型计算的性能更快。</p>
+<p>效率和稳定性调整允许更精确的结果，即使是非常小的值也可以，例如，即使 x 很小，log(1+x) 也能得到很好的结果。</p>
+<p>10）TensorFlow</p>
+<p>地址：<a href="https://www.tensorflow.org" target="_blank" rel="noopener">https://www.tensorflow.org</a></p>
+<p>TensorFlow 来自 Google 的开发人员，它是用于数据流图计算的开源库，专门为机器学习设计。它是为满足 Google 对训练神经网络的高要求而设计的，是基于神经网络的机器学习系统 DistBelief 的继任者。然而，TensorFlow 并不是谷歌的科学专用的——它也足以支持许多真实世界的应用。</p>
+<p>TensorFlow 的关键特征是其多层节点系统，可以在大型数据集上快速训练人工神经网络。这为 Google 的语音识别和图像识别提供了支持。</p>
+<p>11）Keras</p>
+<p>地址：<a href="https://keras.io" target="_blank" rel="noopener">https://keras.io</a></p>
+<p>最后，我们来看看 Keras。它是一个使用高层接口构建神经网络的开源库，它是用 Python 编写的。它简单易懂，具有高级可扩展性。它使用 Theano 或 TensorFlow 作为后端，但 Microsoft 现在已将 CNTK（Microsoft 的认知工具包）集成为新的后端。</p>
+<p>其简约的设计旨在通过建立紧凑型系统进行快速和容易的实验。</p>
+<p>Keras 极其容易上手，而且可以进行快速的原型设计。它完全使用 Python 编写的，所以本质上很高层。它是高度模块化和可扩展的。尽管它简单易用且面向高层，但 Keras 也非常深度和强大，足以用于严肃的建模。</p>
+<p>Keras 的一般思想是基于神经网络的层，然后围绕层构建一切。数据以张量的形式进行准备，第一层负责输入张量，最后一层用于输出。模型构建于两者之间。</p>
+<p>12）NLTK</p>
+<p>地址：<a href="http://www.nltk.org" target="_blank" rel="noopener">http://www.nltk.org</a></p>
+<p>这套库的名称是 Natural Language Toolkit（自然语言工具包），顾名思义，它可用于符号和统计自然语言处理的常见任务。NLTK 旨在促进 NLP 及相关领域（语言学、认知科学和人工智能等）的教学和研究，目前正被重点关注。</p>
+<p>NLTK 允许许多操作，例如文本标记、分类和 tokenizing、命名实体识别、建立语语料库树（揭示句子间和句子内的依存性）、词干提取、语义推理。所有的构建块都可以为不同的任务构建复杂的研究系统，例如情绪分析、自动摘要。</p>
+<p>13）Gensim</p>
+<p>地址：<a href="http://radimrehurek.com/gensim" target="_blank" rel="noopener">http://radimrehurek.com/gensim</a></p>
+<p>这是一个用于 Python 的开源库，实现了用于向量空间建模和主题建模的工具。这个库为大文本进行了有效的设计，而不仅仅可以处理内存中内容。其通过广泛使用 NumPy 数据结构和 SciPy 操作而实现了效率。它既高效又易于使用。</p>
+<p>Gensim 的目标是可以应用原始的和非结构化的数字文本。Gensim 实现了诸如分层 Dirichlet 进程（HDP）、潜在语义分析（LSA）和潜在 Dirichlet 分配（LDA）等算法，还有 tf-idf、随机投影、word2vec 和 document2vec，以便于检查一组文档（通常称为语料库）中文本的重复模式。所有这些算法是无监督的——不需要任何参数，唯一的输入是语料库。</p>
+<p>14）Scrapy</p>
+<p>地址：<a href="https://scrapy.org" target="_blank" rel="noopener">https://scrapy.org</a></p>
+<p>Scrapy 是用于从网络检索结构化数据（如联系人信息或 URL）的爬虫程序（也称为 spider bots）的库。它是开源的，用 Python 编写。它最初是为 scraping 设计的，正如其名字所示的那样，但它现在已经发展成了一个完整的框架，可以从 API 收集数据，也可以用作通用的爬虫。</p>
+<p>该库在接口设计上遵循著名的 Don』t Repeat Yourself 原则——提醒用户编写通用的可复用的代码，因此可以用来开发和扩展大型爬虫。</p>
+<p>Scrapy 的架构围绕 Spider 类构建，该类包含了一套爬虫所遵循的指令。</p>
+<p>15）Statsmodels</p>
+<p>地址：<a href="http://www.statsmodels.org" target="_blank" rel="noopener">http://www.statsmodels.org</a></p>
+<p>statsmodels 是一个用于 Python 的库，正如你可能从名称中猜出的那样，其让用户能够通过使用各种统计模型估计方法以及执行统计断言和分析来进行数据探索。</p>
+<p>许多有用的特征是描述性的，并可通过使用线性回归模型、广义线性模型、离散选择模型、稳健的线性模型、时序分析模型、各种估计器进行统计。</p>
+<p>该库还提供了广泛的绘图函数，专门用于统计分析和调整使用大数据统计数据的良好性能。</p>
+<p>结论</p>
+<p>这个列表中的库被很多数据科学家和工程师认为是最顶级的，了解和熟悉它们是很有价值的。这里有这些库在 GitHub 上活动的详细统计：</p>
+<p><img src="/images/139.jpg" alt="&quot;language”"></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/05/06/流行的 15 个数据科学 Python 库/">流行的15个数据科学Python库</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">葆宁</a></p>
+        <p><span>发布时间:</span>2018-05-06, 14:04:54</p>
+        <p><span>最后更新:</span>2018-09-12, 13:06:58</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/05/06/流行的 15 个数据科学 Python 库/" title="流行的15个数据科学Python库">https://github.com/michaelwuyu/michaelwuyu.github.io.git/2018/05/06/流行的 15 个数据科学 Python 库/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://github.com/michaelwuyu/michaelwuyu.github.io.git/2018/05/06/流行的 15 个数据科学 Python 库/　　作者: 葆宁" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target="_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2018/05/11/中国互联网历史中的25个故事——互联网人的那些传奇/">
+                    中国互联网历史中的25个故事——互联网人的那些传奇
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2018/05/04/AI/">
+                    人工智能简史
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"流行的15个数据科学Python库　| geek_wuyu　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2018/05/11/中国互联网历史中的25个故事——互联网人的那些传奇/" title="上一篇: 中国互联网历史中的25个故事——互联网人的那些传奇">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2018/05/04/AI/" title="下一篇: 人工智能简史">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/09/14/pku/">燕园</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/05/程序设计/">软件项目开发流程</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/01/编程语言/">各主流编程语言对比</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/30/如何理解面向对象和面向过程？/">如何理解面向对象和面向过程？</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/29/软微英文面试/">英文面试</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/11/中国互联网历史中的25个故事——互联网人的那些传奇/">中国互联网历史中的25个故事——互联网人的那些传奇</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/06/流行的 15 个数据科学 Python 库/">流行的15个数据科学Python库</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/04/AI/">人工智能简史</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/28/从Intel和ARM争霸战，看看做芯片有多难/">从Intel和ARM争霸战，看看做芯片有多难</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/21/一张图让你了解编程语言发展史/">一张图让你了解编程语言发展史</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/21/芯片之殇/">芯片是设计难，还是工艺更难</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/13/十个著名的思想实验/">十个著名思想实验</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/11/图灵奖——计算机界的诺贝尔奖，计算机科学、人工智能之父图灵及神一般存在的姚期智，计算机的发展趋势/">图灵奖——计算机界的诺贝尔奖，计算机科学、人工智能之父图灵及神一般存在的姚期智，计算机的发展趋势</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/21/十大常见数据结构/">十大常用数据结构</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2018-2019 葆宁
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style="display:none">
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit" title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>

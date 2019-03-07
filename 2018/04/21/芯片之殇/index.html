@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="葆宁">
+
+
+
+<meta name="description" content="芯片是设计难，还是工艺更难?(摘抄自环球科技，未经许可，禁止用于一切商业用途。）原网址http://sh.qihoo.com/pc/99b5c2ca556503cc7?sign=360_e39369d1美国有大量的芯片设计公司，高通，AMD，NVIDIA等等，这些公司都拥有世界一流的芯片设计师，AMD曾经还有自己的芯片制造工厂，但是迫于巨大的财务压力，把厂子给卖了，就是如今的GF。现在有能力同时设">
+<meta name="keywords" content="芯片">
+<meta property="og:type" content="article">
+<meta property="og:title" content="芯片是设计难，还是工艺更难">
+<meta property="og:url" content="https://github.com/michaelwuyu/michaelwuyu.github.io.git/2018/04/21/芯片之殇/index.html">
+<meta property="og:site_name" content="geek_wuyu">
+<meta property="og:description" content="芯片是设计难，还是工艺更难?(摘抄自环球科技，未经许可，禁止用于一切商业用途。）原网址http://sh.qihoo.com/pc/99b5c2ca556503cc7?sign=360_e39369d1美国有大量的芯片设计公司，高通，AMD，NVIDIA等等，这些公司都拥有世界一流的芯片设计师，AMD曾经还有自己的芯片制造工厂，但是迫于巨大的财务压力，把厂子给卖了，就是如今的GF。现在有能力同时设">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://github.com/images/112.jpg">
+<meta property="og:updated_time" content="2018-09-12T05:06:56.699Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="芯片是设计难，还是工艺更难">
+<meta name="twitter:description" content="芯片是设计难，还是工艺更难?(摘抄自环球科技，未经许可，禁止用于一切商业用途。）原网址http://sh.qihoo.com/pc/99b5c2ca556503cc7?sign=360_e39369d1美国有大量的芯片设计公司，高通，AMD，NVIDIA等等，这些公司都拥有世界一流的芯片设计师，AMD曾经还有自己的芯片制造工厂，但是迫于巨大的财务压力，把厂子给卖了，就是如今的GF。现在有能力同时设">
+<meta name="twitter:image" content="https://github.com/images/112.jpg">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="geek_wuyu" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>芯片是设计难，还是工艺更难 | geek_wuyu</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: 
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/bn.jpg" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">葆宁</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">认真 奋进  阳光</p>
+        
+
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa 北京大学" href="https://pku.edu.cn" title="北京大学"></a>
+                            
+                                <a class="fa 新浪微博" href="https://weibo.com/3042489123/" title="新浪微博"></a>
+                            
+                                <a class="fa GitHub" href="https://github.com/michaelwuyu" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa 微信公众号" href="/img/WX.jpg" title="微信公众号"></a>
+                            
+                                <a class="fa CSDN" href="https://www.csdn.net/" title="CSDN"></a>
+                            
+                                <a class="fa QQ" href="/276326571" title="QQ"></a>
+                            
+                                <a class="fa 微信" href="/17600742008" title="微信"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/IT/">IT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IT互联网/">IT互联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PKU/">PKU</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pku/">pku</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/互联网/">互联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/人工智能/">人工智能</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/芯片/">芯片</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于Java开发&amp;大数据分析</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">葆宁</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/bn.jpg" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">葆宁</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">认真 奋进  阳光</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa 北京大学" target="_blank" href="https://pku.edu.cn" title="北京大学"></a>
+                            
+                                <a class="fa 新浪微博" target="_blank" href="https://weibo.com/3042489123/" title="新浪微博"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/michaelwuyu" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa 微信公众号" target="_blank" href="/img/WX.jpg" title="微信公众号"></a>
+                            
+                                <a class="fa CSDN" target="_blank" href="https://www.csdn.net/" title="CSDN"></a>
+                            
+                                <a class="fa QQ" target="_blank" href="/276326571" title="QQ"></a>
+                            
+                                <a class="fa 微信" target="_blank" href="/17600742008" title="微信"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我">
+</nav>
+      <div class="body-wrap"><article id="post-芯片之殇" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/04/21/芯片之殇/" class="article-date">
+      <time datetime="2018-04-21T06:04:54.000Z" itemprop="datePublished">2018-04-21</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      芯片是设计难，还是工艺更难
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/IT/">IT</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/芯片/">芯片</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>芯片是设计难，还是工艺更难?<br><img src="/images/112.jpg" alt="&quot;芯片”"><br>(摘抄自环球科技，未经许可，禁止用于一切商业用途。）<br>原网址<a href="http://sh.qihoo.com/pc/99b5c2ca556503cc7?sign=360_e39369d1" target="_blank" rel="noopener">http://sh.qihoo.com/pc/99b5c2ca556503cc7?sign=360_e39369d1</a><br>美国有大量的芯片设计公司，高通，AMD，NVIDIA等等，这些公司都拥有世界一流的芯片设计师，AMD曾经还有自己的芯片制造工厂，但是迫于巨大的财务压力，把厂子给卖了，就是如今的GF。现在有能力同时设计和制造处理器芯片的大厂也就剩下英特尔和三星了，可见建设和维持芯片制造厂的难度之大。<br>除去CPU、GPU等复杂的高端芯片，还有许许多多的各类小芯片在我们周围的各种电子设备中，即使是在国内，能够设计这类芯片的公司也有很多很多，但是他们的共同特点就是在芯片设计好之后需要交给芯片代工厂制造，然后才能生产出成品芯片投入市场。<br>全球的芯片代工制造厂就只有台积电、三星、GF这样的了了几家，因为半导体芯片的生产制造过程极其复杂，不仅要购买天价设备，投入巨大研发人员，还要未雨绸缪，工艺随时更新换代(28nm-16nm-10nm-7nm)，同时还少不了丰富的芯片制造经验。台积电一年为研发和新建晶圆厂投资就达数百亿元，还得持续不断的投入，真不是一般公司能玩得起的。秀的芯片设计可以保证在现有工艺下更好的产品质量和良率，但是如果代工厂的工艺本身不过关，就无法做好这个芯片，投入市场更是无从谈起。台湾的联发科和众多科技企业一定程度上也是借助台积电强大的芯片生产能力崛起的，苹果IPhone一款手机同时使用两家不同的代工芯片都会引起能耗差距和全球用户的关注，可想而知，芯片工艺水平是多么重要。国内大陆现在有麒麟、有龙芯，但是至今还没有芯片制造商，大都是拿到别人那里代工，这里面国内有人才和资金的困难，也有欧美国家限制出口高端设备的因素，试想你自主研发的芯片如果找不到代工就只是一张图纸而已，所以说即使芯片设计能力不够强，保证能用还是没问题的，但是如果没有先进成熟的制造工艺和工厂，这个芯片就无从谈起！</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/04/21/芯片之殇/">芯片是设计难，还是工艺更难</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">葆宁</a></p>
+        <p><span>发布时间:</span>2018-04-21, 14:04:54</p>
+        <p><span>最后更新:</span>2018-09-12, 13:06:56</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/04/21/芯片之殇/" title="芯片是设计难，还是工艺更难">https://github.com/michaelwuyu/michaelwuyu.github.io.git/2018/04/21/芯片之殇/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://github.com/michaelwuyu/michaelwuyu.github.io.git/2018/04/21/芯片之殇/　　作者: 葆宁" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target="_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2018/04/21/一张图让你了解编程语言发展史/">
+                    一张图让你了解编程语言发展史
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2018/04/13/十个著名的思想实验/">
+                    十个著名思想实验
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"芯片是设计难，还是工艺更难　| geek_wuyu　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2018/04/21/一张图让你了解编程语言发展史/" title="上一篇: 一张图让你了解编程语言发展史">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2018/04/13/十个著名的思想实验/" title="下一篇: 十个著名思想实验">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/09/14/pku/">燕园</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/05/程序设计/">软件项目开发流程</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/01/编程语言/">各主流编程语言对比</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/30/如何理解面向对象和面向过程？/">如何理解面向对象和面向过程？</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/29/软微英文面试/">英文面试</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/11/中国互联网历史中的25个故事——互联网人的那些传奇/">中国互联网历史中的25个故事——互联网人的那些传奇</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/06/流行的 15 个数据科学 Python 库/">流行的15个数据科学Python库</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/04/AI/">人工智能简史</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/28/从Intel和ARM争霸战，看看做芯片有多难/">从Intel和ARM争霸战，看看做芯片有多难</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/21/一张图让你了解编程语言发展史/">一张图让你了解编程语言发展史</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/21/芯片之殇/">芯片是设计难，还是工艺更难</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/13/十个著名的思想实验/">十个著名思想实验</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/11/图灵奖——计算机界的诺贝尔奖，计算机科学、人工智能之父图灵及神一般存在的姚期智，计算机的发展趋势/">图灵奖——计算机界的诺贝尔奖，计算机科学、人工智能之父图灵及神一般存在的姚期智，计算机的发展趋势</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/21/十大常见数据结构/">十大常用数据结构</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2018-2019 葆宁
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style="display:none">
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit" title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>

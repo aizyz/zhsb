@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="葆宁">
+
+
+
+<meta name="description" content="PYTHON特点：面向对象、解释型主要用途：  图形处理：有PIL、Tkinter等图形库支持，能方便进行图形处理。 数学处理：NumPy扩展提供大量与许多标准数学库的接口。 文本处理：python提供的re模块能支持正则表达式，还提供SGML，XML分析模块，许多程序员利用python进行XML程序的开发。 数据库编程：程序员可通过遵循Python DB-API（数据库应用程序编程接口）规范的">
+<meta name="keywords" content="IT">
+<meta property="og:type" content="article">
+<meta property="og:title" content="各主流编程语言对比">
+<meta property="og:url" content="https://github.com/michaelwuyu/michaelwuyu.github.io.git/2018/06/01/编程语言/index.html">
+<meta property="og:site_name" content="geek_wuyu">
+<meta property="og:description" content="PYTHON特点：面向对象、解释型主要用途：  图形处理：有PIL、Tkinter等图形库支持，能方便进行图形处理。 数学处理：NumPy扩展提供大量与许多标准数学库的接口。 文本处理：python提供的re模块能支持正则表达式，还提供SGML，XML分析模块，许多程序员利用python进行XML程序的开发。 数据库编程：程序员可通过遵循Python DB-API（数据库应用程序编程接口）规范的">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://github.com/images/187.jpg">
+<meta property="og:updated_time" content="2018-09-12T05:06:59.298Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="各主流编程语言对比">
+<meta name="twitter:description" content="PYTHON特点：面向对象、解释型主要用途：  图形处理：有PIL、Tkinter等图形库支持，能方便进行图形处理。 数学处理：NumPy扩展提供大量与许多标准数学库的接口。 文本处理：python提供的re模块能支持正则表达式，还提供SGML，XML分析模块，许多程序员利用python进行XML程序的开发。 数据库编程：程序员可通过遵循Python DB-API（数据库应用程序编程接口）规范的">
+<meta name="twitter:image" content="https://github.com/images/187.jpg">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="geek_wuyu" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>各主流编程语言对比 | geek_wuyu</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: 
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/bn.jpg" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">葆宁</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">认真 奋进  阳光</p>
+        
+
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa 北京大学" href="https://pku.edu.cn" title="北京大学"></a>
+                            
+                                <a class="fa 新浪微博" href="https://weibo.com/3042489123/" title="新浪微博"></a>
+                            
+                                <a class="fa GitHub" href="https://github.com/michaelwuyu" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa 微信公众号" href="/img/WX.jpg" title="微信公众号"></a>
+                            
+                                <a class="fa CSDN" href="https://www.csdn.net/" title="CSDN"></a>
+                            
+                                <a class="fa QQ" href="/276326571" title="QQ"></a>
+                            
+                                <a class="fa 微信" href="/17600742008" title="微信"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/IT/">IT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IT互联网/">IT互联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PKU/">PKU</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pku/">pku</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/互联网/">互联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/人工智能/">人工智能</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/芯片/">芯片</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于Java开发&amp;大数据分析</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">葆宁</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/bn.jpg" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">葆宁</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">认真 奋进  阳光</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa 北京大学" target="_blank" href="https://pku.edu.cn" title="北京大学"></a>
+                            
+                                <a class="fa 新浪微博" target="_blank" href="https://weibo.com/3042489123/" title="新浪微博"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/michaelwuyu" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa 微信公众号" target="_blank" href="/img/WX.jpg" title="微信公众号"></a>
+                            
+                                <a class="fa CSDN" target="_blank" href="https://www.csdn.net/" title="CSDN"></a>
+                            
+                                <a class="fa QQ" target="_blank" href="/276326571" title="QQ"></a>
+                            
+                                <a class="fa 微信" target="_blank" href="/17600742008" title="微信"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我">
+</nav>
+      <div class="body-wrap"><article id="post-编程语言" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/06/01/编程语言/" class="article-date">
+      <time datetime="2018-06-01T06:04:54.000Z" itemprop="datePublished">2018-06-01</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      各主流编程语言对比
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/IT/">IT</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IT/">IT</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p><img src="/images/187.jpg" alt="&quot;AI”"></p>
+<p>PYTHON<br>特点：面向对象、解释型<br>主要用途：</p>
+<ol>
+<li>图形处理：有PIL、Tkinter等图形库支持，能方便进行图形处理。</li>
+<li>数学处理：NumPy扩展提供大量与许多标准数学库的接口。</li>
+<li>文本处理：python提供的re模块能支持正则表达式，还提供SGML，XML分析模块，许多程序员利用python进行XML程序的开发。</li>
+<li>数据库编程：程序员可通过遵循Python DB-API（数据库应用程序编程接口）规范的模块与Microsoft SQL Server，Oracle，Sybase，DB2，MySQL、SQLite等数据库通信。python自带有一个Gadfly模块，提供了一个完整的SQL环境。</li>
+<li>网络编程：提供丰富的模块支持sockets编程，能方便快速地开发分布式应用程序。很多大规模软件开发计划例如Zope，Mnet 及BitTorrent. Google都在广泛地使用它。</li>
+<li>Web编程：应用的开发语言，支持最新的XML技术。</li>
+<li>多媒体应用：Python的PyOpenGL模块封装了“OpenGL应用程序编程接口”，能进行二维和三维图像处理。PyGame模块可用于编写游戏软件。</li>
+<li>pymo引擎：PYMO全称为python memories off，是一款运行于Symbian S60V3,Symbian3,S60V5, Symbian3, Android系统上的AVG游戏引擎。因其基于python2.0平台开发，并且适用于创建秋之回忆（memories off）风格的AVG游戏，故命名为PYMO。</li>
+<li>黑客编程：python有一个hack的库,内置了你熟悉的或不熟悉的函数，但是缺少成就感。</li>
+</ol>
+<p>优点：</p>
+<ol>
+<li>简单：PYTHON是一种代表简单主义思想的语言。阅读一个良好的PYTHON程序就感觉像是在读英语一样。它使你能够专注于解决问题而不是去搞明白语言本身。</li>
+<li>易学：PYTHON极其容易上手，因为PYTHON有极其简单的说明文档。</li>
+<li>速度快：PYTHON 的底层是用 C 语言写的，很多标准库和第三方库也都是用 C 写的，运行速度非常快。</li>
+<li>免费、开源：PYTHON是FLOSS（自由/开放源码软件）之一。使用者可以自由地发布这个软件的拷贝、阅读它的源代码、对它做改动、把它的一部分用于新的自由软件中。FLOSS是基于一个团体分享知识的概念。</li>
+<li>高层语言：用PYTHON语言编写程序的时候无需考虑诸如如何管理你的程序使用的内存一类的底层细节。</li>
+<li>可移植性：由于它的开源本质，PYTHON已经被移植在许多平台上（经过改动使它能够工作在不同平台上）。这些平台包括LINUX、WINDOWS、FREEBSD、MACINTOSH、SOLARIS、OS/2、AMIGA、AROS、AS/400、BEOS、OS/390、Z/OS、PALM OS、QNX、VMS、PSION、ACOM RISC OS、VXWORKS、PLAYSTATION、SHARP ZAURUS、WINDOWS CE、POCKETPC、SYMBIAN以及GOOGLE基于LINUX开发的ANDROID平台。</li>
+<li>解释性：一个用编译性语言比如C或C++写的程序可以从源文件（即C或C++语言）转换到一个你的计算机使用的语言（二进制代码，即0和1）。这个过程通过编译器和不同的标记、选项完成。</li>
+<li>运行程序的时候，连接/转载器软件把你的程序从硬盘复制到内存中并且运行。而PYTHON语言写的程序不需要编译成二进制代码。你可以直接从源代码运行程序。</li>
+<li>在计算机内部，PYTHON解释器把源代码转换成称为字节码的中间形式，然后再把它翻译成计算机使用的机器语言并运行。这使得使用PYTHON更加简单。也使得PYTHON程序更加易于移植。</li>
+<li>面向对象：PYTHON既支持面向过程的编程也支持面向对象的编程。在“面向过程”的语言中，程序是由过程或仅仅是可重用代码的函数构建起来的。在“面向对象”的语言中，程序是由数据和功能组合而成的对象构建起来的。</li>
+<li>可扩展性：如果需要一段关键代码运行得更快或者希望某些算法不公开，可以部分程序用C或C++编写，然后在PYTHON程序中使用它们。</li>
+<li>可嵌入性：可以把PYTHON嵌入C/C++程序，从而向程序用户提供脚本功能。</li>
+<li>丰富的库：PYTHON标准库确实很庞大。它可以帮助处理各种工作，包括正则表达式、文档生成、单元测试、线程、数据库、网页浏览器、CGI、FTP、电子邮件、XML、XML-RPC、HTML、WAV文件、密码系统、GUI（图形用户界面）、TK和其他与系统有关的操作。这被称作PYTHON的“功能齐全”理念。除了标准库以外，还有许多其他高质量的库，如WXPYTHON、TWISTED和PYTHON图像库等等。</li>
+<li>规范的代码：PYTHON采用强制缩进的方式使得代码具有较好可读性。而PYTHON语言写的程序不需要编译成二进制代码。<br>缺点</li>
+<li>单行语句和命令行输出问题：很多时候不能将程序连写成一行，如IMPORT SYS;FOR I IN SYS.PATH:PRINT I。而PERL和AWK就无此限制，可以较为方便的在SHELL下完成简单程序，不需要如PYTHON一样，必须将程序写入一个.PY文件。</li>
+<li>独特的语法</li>
+<li>这也许不应该被称为局限，但是它用缩进来区分语句关系的方式还是给很多初学者带来了困惑。即便是很有经验的PYTHON程序员，也可能陷入陷阱当中。最常见的情况是TAB和空格的混用会导致错误，而这是用肉眼无法分别的。</li>
+<li>运行速度慢：这里是指与C和C++相比。<br>C<br>主要用途：<br>优点：<br>缺点<br>C++<br>特点：<br>C++支持多种编程范式 －－面向对象编程、泛型编程和过程化编程。<br>主要用途：<br>系统开发，引擎开发</li>
+<li>C++设计成静态类型、和C同样高效且可移植的多用途程序设计语言。</li>
+<li>C++设计直接的和广泛的支持多种程序设计风格（程序化程序设计、资料抽象化、面向对象程序设计、泛型程序设计）。</li>
+<li>C++设计无需复杂的程序设计环境。</li>
+<li>C++语言灵活，运算符的数据结构丰富、具有结构化控制语句、程序执行效率高，而且同时具有高级语言与汇编语言的优点，与其它语言相比 ，可以直接访问物理地址，与汇编语言相比又具有良好的可读性和可移植性。<br>缺点：<br>C++由于语言本身复杂。C++的编译系统受到C++的复杂性的影响，非常难于编写，即使能够使用的编译器如果存在问题，可能难于被发现。[<br>C#<br>特点：<br>面向对象的、运行于.NET FRAMEWORK之上，面向对象<br>主要用途：<br>快速地编写各种基于MICROSOFT .NET平台的应用程序，MICROSOFT .NET提供了一系列的工具和服务来最大程度地开发利用计算与通讯领域。<br>优点：</li>
+<li>更先进的语法体系</li>
+<li>强大的周边<br>缺点</li>
+<li>没有考虑代码量</li>
+<li>这是一个产品<br>HTML<br>主要用途：<br>优点：<br>缺点<br>PHP<br>特点：<br>通用开源脚本语言</li>
+</ol>
+<p>主要用途：<br>WEB开发领域<br>优点：</p>
+<ol>
+<li>开放的源代码</li>
+<li>免费性</li>
+<li>快捷性</li>
+<li>跨平台性强</li>
+<li>效率高</li>
+<li>图像处理</li>
+<li>专业专注<br>缺点</li>
+<li>对递归的不良支持</li>
+<li>并非线程安全</li>
+<li>因商业应用而残废</li>
+<li>没有命名空间</li>
+<li>不标准的日期格式字符</li>
+<li>混乱的许可证</li>
+<li>不一致的函数命名规则<br>JAVA<br>特点：<br>JAVA是一种可以撰写跨平台应用软件的面向对象的程序设计语言。JAVA 技术具有卓越的通用性、高效性、平台移植性和安全性<br>主要用途：<br>WEB浏览器、网络应用系统。<br>优点：<br>1． 简单性：风格类似于C++，JAVA摒弃了C++中容易引发程序错误的地方，如指针和内存管理。<br>2． 面向对象：JAVA是一种完全面向对象语言。从这点来看，JAVA类似于SMALLTALK，但其特性、尤其是适用于分布式计算环境的特性远远超越了SMALLTALK。<br>3． 分布式：JAVA包括一个支持HTTP和FTP等基于TCP/IP协议的子库。因此，JAVA应用程序可凭借URL打开并访问网络上的对象，其访问方式与访问本地文件系统几乎完全相同。<br>4． 健壮：JAVA致力于检查程序在编译和运行时的错误。类型检查帮助检查出许多开发早期出现的错误。JAVA自己操纵内存减少了内存出错的可能性。<br>5． 结构中立：JAVA将程序编译成一种结构中立的中间文件格式。只要有JAVA运行系统的机器都执行这种中间代码。这种中间语言被设计在虚拟机上运行，由机器相关的运行调试器实现执行。<br>6． 安全：<br>1）删除了香指针和手动释放内存等功能，避免了非法内存操作。<br>2）当JAVA用来创建浏览器时，语言功能和浏览器本身提供的功能结合起来。<br>JAVA在机器上执行前，要经过很多测试，它经过代码校验，检查代码段的格式，检测指针操作，对象操作是否过分以及试图改变一个对象的类型。<br>7． 可移植的：同体系结构无关的特性使得JAVA应用程序可以在配备JAVA解释器和运行环境的任何计算机系统上运行。任何JAVA代码会被解释成一种中间语言，然后通过不同机子的特定环境（如机器指令）运行程序。实现方便移植的特点。<br>8． 解释性。JAVA解释器能直接运行目标代码指令。链接程序通常比编译程序所需资源少。<br>9． 高性能。如果解释器速度不慢，JAVA可以在运行时直接将目标代码翻译成机器指令。SUN用直接解释器一秒钟内可调用300,000个过程。<br>10． 多线程：JAVA提供的多线程功能使得在一个程序里可同时执行多个小任务。多线程带来的更大好处是更好的交互性能和实时控制性能。<br>11． 动态：动态特性允许程序动态地装入运行过程中所需要的类。在运行时确定引用的好处是可以使用已被更新的类，而不必担心会影响原有的代码。如果程序连接了网络中另一系统中的某一类，该类的所有者也可以自由地对该类进行更新，而不会使任何引用该类的程序崩溃。<br>缺点</li>
+<li>存在非对象的数据类型</li>
+<li>不能够用一种描述方法来表达各种类（CLASS）</li>
+<li>无法继承2个以上的类的装配<br>JAVASCRIPT<br>特点：<br>直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型<br>主要用途：</li>
+<li>嵌入动态文本于HTML页面。[4] </li>
+<li>对浏览器事件做出响应。[4] </li>
+<li>读写HTML元素。[4] </li>
+<li>在数据被提交到服务器之前验证数据。[4] </li>
+<li>检测访客的浏览器信息。[4] </li>
+<li>控制cookies，包括创建和修改等。[4] </li>
+<li>基于Node.js技术进行服务器端编程。[</li>
+</ol>
+<p>优点：</p>
+<ol>
+<li>减少网络传输</li>
+<li>方便地操纵HTML对象</li>
+<li>支持分布式运算和处理<br>缺点：</li>
+<li>不同浏览器支持程度不同</li>
+<li>WEB安全性<br>框架介绍：<br>(1).JQUERY<br><1>.介绍<br>JQUERY 是一款同 PROTOTYPE 一样优秀 JS 开发库类，特别是对 CSS 和 XPATH 的支持，使我们写 JS 变得更加方便！如果你不是个 JS 高手又想写出优秀的 JS 效果，那么 JQUERY 可以帮你达到目的！并且简介的语法和高的效率一直是JQUERY追求的目标。<br><2>.优点：注重简介和高效，JS 效果有 YUI-EXT 的选择，因为 YUI-EXT 重用了很多 JQUERY 的函数<br><3>.缺点：据说太嫩，历史不悠久。</3></2></1></li>
+</ol>
+<p>(2).EXT</p>
+<p><1>.介绍<br>基于 YAHOO UI 的扩展包 YUI-EXT 是具有 CS 风格的 WEB 用户界面组件，能实现复杂的 LAYOUT 布局，界面效果可以和 BACKBASE 媲美，而且使用纯 JAVASCRIPT 代码开发。真正的可编辑的表格 EDIT GRID，支持 XML 和 JSON 数据类型，直接可以迁入 GRID。许多组件实现了对数据源的支持，例如动态的布局，可编辑的表格控件，动态加载的 TREE 控件、动态拖拽效果等等。从 1.0 BETA 版开始同 JQUERY 合作，推出基于 JQUERY 的 EXT 1.0，提供了更多有趣的功能。</1></p>
+<p><2>.优点：结构化，类似于 JAVA 的结构，清晰明了，底层用到了 JQUERY 的一些函数，使整合使用有了选择，最重要的一点是界面太让让人震撼了。</2></p>
+<p><3>.缺点：太过复杂，整个界面的构造过于复杂。</3></p>
+<p>(3).DOJO </p>
+<p><1>.介绍<br>DOJO 是目前最为强大的JS框架，它在自己的 WIKI 上给自己下了一个定义，DOJO 是一个用 JAVASCRIPT 编写的开源的DHTML工具箱。DOJO 很想做一个“大一统”的工具箱，不仅仅是浏览器层面的，野心还是很大的。DOJO 包括 AJAX、BROWSER、EVENT、WIDGET 等跨浏览器 API，包括了 JS 本身的语言扩展，以及各个方面的工具类库，和比较完善的 UI 组件库，也被广泛应用在很多项目中，他的 UI 组件的特点是通过给 HTML 标签增加 TAG 的方式进行扩展，而不是通过写 JS 来生成，DOJO 的 API 模仿 JAVA 类库的组织方式。用 DOJO 写 WEB OS 可谓非常方便。DOJO 现在已经 4.0 了，DOJO 强大的地方在于界面和特效的封装，可以让开发者快速构建一些兼容标准的界面。</1></p>
+<p><1>.优点：库相当完善，发展时间也比较长，功能强大，据说利用 DOJO 的 IO.BIND() 可以实现 COMET 看见其功能强大非一般，得到 IBM 和 SUN 的支持。</1></p>
+<p><2>.缺点：文件体积比较大，200多KB，初次下载相当慢，此外，DOJO 的类库使用显得不是那么易用，JS语法增强方面不如 PROTOTYPE</2></p>
+<p>(4).PROTOTYPE </p>
+<p><1>.介绍<br>它是一个非常优雅的 JS 库，定义了 JS 的面向对象扩展，DOM 操作API，事件等等，以 PROTOTYPE 为核心，形成了一个外围的各种各样的 JS 扩展库，是相当有前途的 JS 底层框架，值得推荐，感觉也是现实中应用最广的库类（ROR 集成的 AJAX JS 库），之上还有 SCRIPTACULOUS 实现一些JS组件功能和效果。</1></p>
+<p><2>.优点：基本底层，易学易用，甚至是其他一些JS特效开发包的底层，体积算是最小的了。</2></p>
+<p><3>.缺点：如果说缺点，可能就是功能是他的弱项</3></p>
+<p>(5).DSCRIPTACULOUS </p>
+<p><1>.介绍<br>SCRIPTACULOUS 是基于PROTOTYPE.JS 框架的 JS 效果。包含了 6 个 JS 文件，不同的文件对应不同的 JS 效果，所以说，如果底层用 PROTOTYPE 的话，做JS效果用 SCRIPTACULOUS 那是再合适不过的了，连大名鼎鼎的 DIGG 都在用他，可见不一般</1></p>
+<p><2>.优点：基于PROTOTYPE 是最大的优点，由于使用 PROTOTYPE 的广泛性，无疑对用户书锦上添花。</2></p>
+<p><3>.缺点：刚刚兴起，需要时间的磨练</3></p>
+<p>(6).MOCHIKIT </p>
+<p><1>.介绍<br>MOCHIKIT 自称为一个轻量级的 JS 框架。MOCHIKIT 主要受到 PYTHON 和 PYTHON 标准库提供的很多便利之处的启发，另外还缓解了浏览器版本之间的不一致性。其中的 MOCHIKIT.DOM 尤其方便，能够以比原始 JAVASCRIPT 更友好的方式处理 DOM 对象。MOCHIKIT.DOM 大部分都是针对 XHTML 文档定制的，如果与 MOCHIKIT 和 AJAX 结合在一起，使用 XHTML 包装的微格式尤其方便。MOCHIKIT 可以直接对字符串或者数字格式化输出，比较实用和方便。它还有自己的 JS 代码解释器</1></p>
+<p><2>.优点：MOCHIKIT.DOM 这部分很实用，简介也是很突出的</2></p>
+<p><3>.缺点：轻量级的缺点</3></p>
+<p>(7).MOOTOOLS </p>
+<p><1>.介绍<br>MOOTOOLS 是一个简洁，模块化，面向对象的 JAVASCRIPT 框架。它能够帮助你更快，更简单地编写可扩展和兼容性强的 JAVASCRIPT 代码。MOOTOOLS 跟 PROTOTYPEJS 相类似，语法几乎一样。但它提供的功能要比 PROTOTYPEJS 多，而且更强大。比如增加了动画特效、拖放操作等等。 </1></p>
+<p><2>.优点：可以定制自己所需要的功能，可以说是 PROTOTYPEJS 的增强版。</2></p>
+<p><3>.缺点：不大不小，具体应用具体分析。</3></p>
+<p>(8).MOO.FX </p>
+<p><1>.介绍<br>MOO.FX是 一个超级轻量级的 JAVASCRIPT 特效库（7K），能够与 PROTOTYPE.JS 或MOOTOOLS 框架一起使用。它非常快、易于使用、跨浏览器、符合标准，提供控制和修改任何 HTML 元素的 CSS 属性，包括颜色。它内置检查器能够防止用户通过多次或疯狂点击来破坏效果。MOO.FX整体采用模块化设计，所以可以在它的基础上开发你需要的任何特效。 </1></p>
+<p><2>.优点：小块头有大能耐</2></p>
+<p><3>.缺点：这么小了，已经不错了<br>PERL<br>特点：<br>集成了正则表达式的功能<br>主要用途：<br>WEB编程、数据库处理、XML处理以及系统管理<br>优点：<br>PERL追求的是简单, 解决一个一般的问题用它几行代码就完成了. 一个稍复杂一点的问题代码也不会超过一屏! 在软件测试中，PERL通常是非常重要的角色。一般一个测试通用函数库就要分十几个文件，甚至更多，包含多达上千个定制功能。而这些函数将在主函数运行时，不定数量的被调用。几乎可以说，一切自动过程都是由PERL自己完成的，可见其功能的强大和在当今计算机技术高速发展的时期仍然发挥着重要的作用。</3></p>
+<p>PERL 最初是当做一种 UNIX 的脚本语言设计的，但是它早就移植到大多数其它操作系统里了。因为 PERL 几乎可以在任何地方运行，所以 PERL 可以说是当今最具有移植性的编程环境；要想写可移植的 C/C++ 程序，你得在程序里加上一大堆 #IFDEF 标签来区分不同的系统；要想写可移植的 JAVA 程序，你必须理解每种新的 JAVA 实现的特质；要想写可移植的SHELL，你可能要记住每条命令在每种操作系统上的语法，走运的时候你可能可以找到一些公共的东西；要想写可移植的 VISUAL BASIC 程序，需要对“移植”有个更灵活的定义。</p>
+<p>让我们很高兴的是 PERL 避免了所有这些问题，同时还保留了这些语言中的许多优点，同时还有一些自己的特色。PERL 的特色来自许多方面：它的特性集的工具，PERL 社区的创造性，以及开源运动的大环境。不过，许多这些特性都是混合的东西；PERL 的身世复杂，它总是把事物看成是优点的不同方面，而不是弱点。PERL 是“背黑锅我来”的语言。如果你觉得自己陷入一团乱麻之中，非常渴望自由，那么请使用 PERL。</p>
+<p>PERL 是跨文化的。PERL 的爆炸性增长很大程度上是因为那些前 UNIX 系统程序员的渴望，他们希望从他们的“老家”带着尽可能多的东西。对于他们而言，PERL 是可移植的 UNIX 文化蒸馏器，是”此路不通”的沙漠中的绿洲。从另外一个角度来看，PERL 还可以从另外一个方向运转：在 WINDOWS 上工作的 WEB 设计者通常会非常开心地发现他们的 PERL 程序可以不加修改地在 UNIX 服务器上跑。</p>
+<p>尽管 PERL 在系统程序员和 WEB 设计师中间非常流行，但这只是因为是他们最早发现 PERL 的，PERL 可以用于更广泛的用途。从 PERL 最早的文本处理语言开始，它已经发展成为一种非常复杂的，通用的编程语言，以及完整的开发环境，包括调试器，调节器，交叉引用，编译器，库，语法提示编辑器，以及所有其它“真正”的编程语言所具有的所有挂勾，只要你需要。当然这些东西都是让我们可能处理难的问题的东西，而且很多其它语言也可以做到这一点。PERL 之所以成为 PERL 是因为它从来不会因为保持简单事情简单化而丢失其他方面的特性。</p>
+<p>因为 PERL 既强大又好用，所以它被广泛地用于日常生活的方方面面，从宇航工程到分子生物学，从数学到语言学，从图形处理到文档处理，从数据库操作到网络管理。很多人用 PERL 进行快速处理那些很难分析或转换的大批量数据，不管你是处理 DNA 序列，网页，还是猪肚皮的未来都无所谓。实际上，在 PERL 社区有一个笑话就是，下次股市大崩盘就很有可能是哪个家伙写的脚本里头有BUG造成的。（不过，乐观点来看就是，任何还在失业的股票分析师仍然有可以利用的技巧。）</p>
+<p>PERL 的成功有许多原因。PERL 早在开源软件的名字出现之前就已经是一个成功的开源项目了。PERL 是自由的，并将永远自由下去。你可以在任何合适的场合使用 PERL，只需要遵守一个非常自由的版权就可以了。如果你在从事商业活动并且还想使用 PERL，那么用就是了。你可以把 PERL 嵌入到你写的商业软件中而不需要支付任何费用也没有任何限制。如果你碰上一个 PERL 社区解决不了的问题，那你也还有最后的一招：源程序本身。 PERL 社区不会在“升级”的伪装下租给你它们的商业秘密。而且 PERL 社区也不会“停业 ”，更不会让你孤立无援。</p>
+<p>PERL 是自由软件这一点无疑对它是有帮助的。但这一条并不足以解释 PERL 现象，因为许多自由软件包没有能繁荣起来。PERL 不仅自由；而且好玩。人们觉得自己在 PERL 里可以有创造力，因为它们有表达的自由：他们可以选择是为计算机速度优化还是为程序员的速度优化，是冗长还是简洁，是选择可读性还是可维护性，或者选择复用性，移植性，接受性和传授性等等。假如你进入一次模糊的 PERL 比赛，甚至你还可以为模糊性做优化。</p>
+<p>PERL 可以给予你所有这些自由，因为它是一门有着分裂人格的语言。PERL 同时是很简单并且很富有的语言。PERL 从其它地方拿来好主意，然后把它们安装到易用的框架里面。对于只是喜欢她的人来说，PERL 是实用抽取和报表语言（PRACTICAL EXTRACTOIN AND REPORT LANGUAGE）。对那些热爱她的人而言，她是变态电子垃圾制造者（PATHOLOGICALLY ELECTRIC RUBBISH LISTER）。在少数人眼里，PERL 是毫无意义的重复练习。不过世界需要一点点冗余。精简主义者总是想把事物分隔开。而我们则总是企图把它们合并到一起。</p>
+<p>PERL 之所以是简单的语言是有很多原因的。比如你用不着知道什么特殊的指令就可以编译 PERL 程序–只要把它当做批处理或者 SHELL 脚本执行就可以了。PERL 的类型和结构很容易使用和理解。PERL 对你的数据没有任何限制–你的字串和数组可以要多长就多长（只要你有足够的内存），而且它们都会自动增长。PERL 不会强迫你学习新的语法和语意，PERL 改从许多其它你已经熟悉的语言里（比如 C, AWK, BASIC 和 PYTHON, 英文，希腊语等）借来语法。实际上，任何程序员都可以从书写良好的 PERL 代码段中读懂它的含义。</p>
+<p>最重要的是，你不用先学习所有 PERL 的东西就可以开始写有用的程序。你可以写很小的 PERL 程序。你也可以象小孩那样写 PERL 程序，我们保证不会笑话你。或者更准确地说是，我们绝不会笑话小孩做事情的创造性。PERL 里的许多观点都是从自然语言中借来的，其中一条最好的观点就是只要你能把自己的意思表述清楚，那么你就可以使用这些语言的一个子集。PERL 文化可以接受任何熟练程度的成员。我们不会在你背后放个语言警察。如果你的老板不炒你，而且你的 PERL 脚本也能完成工作，那么它就是“正确”的。</p>
+<p>尽管 PERL 很简单，但它仍然是一种特性很丰富的语言，如果你想用那些特性的话，那你就要学习一些东西。这也是把难题变简单的学费。虽然你要想把所有 PERL 能做的事情吸收还需要一些时间，但到你需要这些功能的时候你就会非常开心地发现 PERL 已经可以做这些事情了。</p>
+<p>由于 PERL 的继承性，就算它只是用做数据归纳语言的时候也有丰富的特性，PERL 一开始就设计成可以浏览文件，扫描大量文本并且生成动态数据以及打印出这些数据的良好格式化的报表。不过，随后 PERL 就开始风行，于是它就成了可以操作文件系统，进程管理，数据库管理，进行 C/S 编程和安全编程，WEB 信息管理，甚至可以进行面向对象和面向功能的编程的语言。而且这些功能并非只是在 PERL 这边，每种新功能都和其它东西交流得很好，别忘了 PERL 从一开始就是设计成胶水语言的。</p>
+<p>而且 PERL 并不仅仅只能黏合它自己的特性。PERL 是设计成可以用模块扩展的语言。你可以用 PERL 快速设计，编写，调试和部署 PERL 应用，并且你还可以在需要的时候很方便地扩展这些应用。你可以在其它语言里嵌入 PERL，而且你也可以在 PERL 里嵌入其它语言。通过模块输入机制，你可以把这些外部的扩展当做内置于 PERL 的特性。那些面向对象的外部库在 PERL 内部仍然保持面向对象的特征。</p>
+<p>PERL 还在许多其它方面协助你。和严格的每次执行一条命令的命令文件和 SHELL 脚本不同的是，PERL 先把你的程序快速编译成一种内部格式。和其它任何编译器一样，这个时候还进行各种优化，同时把碰到的任何问题反馈给你。一旦 PERL 的编译器前端对你的程序表示满意了，它就把这些中间代码交给解释器执行（或者是给其它的能生成 C 或者字节码的模块后端）。听起来挺复杂，不过 PERL 的编译器和解释器干这些活效率相当高，我们的编译-运行-修改的过程几乎都是以秒计。再加上 PERL 的许多其他开发特性，这种快速的角色转换很适合做快速原型设计。然后随着你的程序的成熟，你可以逐步拧紧身上的螺母，减少散漫增强纪律。如果你做得好，PERL 也能帮你这个忙。</p>
+<p>PERL 还可以帮你写更安全的程序。除了其它语言提供的典型的安全接口之外，PERL 还通过一种跟踪数据的机制给你提供预防意外安全错误的保护，这样就可以在灾害发生之前预防其发生。最后，PERL 还可以让你设置一个特殊的防护隔段运行那些来源不明的 PERL 代码，以此来杜绝危险操作。</p>
+<p>不过，偏执一点儿说，PERL 帮你的大部分内容和 PERL 本身没有什么关系，而是和使用 PERL 的人有关。坦率地说，PERL 社区的人们可以说是地球上最热心的人了。如果 PERL 运动里面有那么一点点宗教色彩的话，那么这就是它的核心了。LARRY 希望 PERL 社区像一小片天堂那样运转，目前看来他的愿望基本上是实现了。我们也请你为此做出自己的努力。</p>
+<p>PERL之所以强大, 是因为有CPAN, CPAN上面有无数的开源模块, 从科学计算到桌面应用到网络等等各个方面都有大量的模块! 并且世界上也还有无数的人在向上面添加模块! 如果你想要用PERL实现某功能, 不用自己做, 在CPAN上面搜一搜, 多半都会得到已有的结果! CPAN（”THE COMPREHENSIVE PERL ARCHIVE NETWORK”全面的 PERL 存档网络）是查找任何 PERL 有关的东西的中心仓库。它包含从整个 PERL 社区收集来的智慧：成百上千的 PERL 模块和脚本，相当于好几本书的文档，以及整个 PERL 发布。如果有东西是用 PERL 写的，而且这个东西很有用而且是自由的，那么它很有可能就在 CPAN 上。<br>缺点：<br>也正是因为PERL的灵活性和“过度”的冗余语法，也因此获得了WRITE-ONLY的“美誉”，因为许多PERL程序的代码令人难以阅读，实现相同功能的程序代码长度可以相差十倍百倍。但PERL同样可以将代码书写得像PYTHON或RUBY等语言一样优雅。</p>
+<p>很多时候，PERL.EXE进程会占用很多的内存空间，虽然只是一时，但是感觉不好。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/06/01/编程语言/">各主流编程语言对比</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">葆宁</a></p>
+        <p><span>发布时间:</span>2018-06-01, 14:04:54</p>
+        <p><span>最后更新:</span>2018-09-12, 13:06:59</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/06/01/编程语言/" title="各主流编程语言对比">https://github.com/michaelwuyu/michaelwuyu.github.io.git/2018/06/01/编程语言/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://github.com/michaelwuyu/michaelwuyu.github.io.git/2018/06/01/编程语言/　　作者: 葆宁" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target="_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2018/06/05/程序设计/">
+                    软件项目开发流程
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2018/05/30/如何理解面向对象和面向过程？/">
+                    如何理解面向对象和面向过程？
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"各主流编程语言对比　| geek_wuyu　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2018/06/05/程序设计/" title="上一篇: 软件项目开发流程">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2018/05/30/如何理解面向对象和面向过程？/" title="下一篇: 如何理解面向对象和面向过程？">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/09/14/pku/">燕园</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/05/程序设计/">软件项目开发流程</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/01/编程语言/">各主流编程语言对比</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/30/如何理解面向对象和面向过程？/">如何理解面向对象和面向过程？</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/29/软微英文面试/">英文面试</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/11/中国互联网历史中的25个故事——互联网人的那些传奇/">中国互联网历史中的25个故事——互联网人的那些传奇</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/06/流行的 15 个数据科学 Python 库/">流行的15个数据科学Python库</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/04/AI/">人工智能简史</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/28/从Intel和ARM争霸战，看看做芯片有多难/">从Intel和ARM争霸战，看看做芯片有多难</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/21/一张图让你了解编程语言发展史/">一张图让你了解编程语言发展史</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/21/芯片之殇/">芯片是设计难，还是工艺更难</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/13/十个著名的思想实验/">十个著名思想实验</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/11/图灵奖——计算机界的诺贝尔奖，计算机科学、人工智能之父图灵及神一般存在的姚期智，计算机的发展趋势/">图灵奖——计算机界的诺贝尔奖，计算机科学、人工智能之父图灵及神一般存在的姚期智，计算机的发展趋势</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/21/十大常见数据结构/">十大常用数据结构</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2018-2019 葆宁
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style="display:none">
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit" title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
